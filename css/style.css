@@ -1,3 +1,9 @@
+/*==== CSS del Logo ===*/
+.navbar-brand :hover{
+    transition: all 0.5s;
+    transform: scale(150%)rotate(-15deg);
+}
+
 /*==== css del carrusel ====*/
 .carrusel{
     width: 40%;
