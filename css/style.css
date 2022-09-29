@@ -1,6 +1,7 @@
 /*==== css del carrusel ====*/
 .carrusel{
     width: 40%;
+    max-width: 55%;
 
 }
 
