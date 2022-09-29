@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- NavBar y Logo -->
 <body class="container-fluid bg-black">
     <header class="container-fluid bg-secondary">
         <nav class="navbar navbar-expand-lg bg-secondary">
@@ -79,15 +80,70 @@
                 </div>
             </section>
         </div>
-        <section class="container-fluid">
-            <div class="contacto">
-
+       
+        <!-- Medios de Contacto -->
+       
+       <br/>
+        <section class="container-fluid text-white hstack gap-3">
+            <div class="row align-items-center">
+                <div class="col">
+                  <i class="fs-1">Contacto</i>
+                </div>
+                <br />
+                <form action="https://formspree.io/f/xayknpaz" method="POST">
+                    <div class="form-item">
+                        <label for="nombre">NOMBRE</label>
+                        <input type="text" id="nombre" name="nombre" required><br />
+                    </div>                    
+                    <div class="form-item">
+                        <label for="apellido">APELLIDO</label>
+                        <input type="text" id="apellido" name="apellido" required><br />
+                    </div>                   
+                    <div class="form-item">
+                        <label for="email">E-MAIL</label>
+                        <input type="email" id="email" name="email" required><br />
+                    </div>                   
+                    <div class="form-item">
+                        <label for="comentarios">COMENTARIOS</label><br />
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
             </div>
-            <div class="encontranos">
-                
-            </div>
-
+                </div>
+                <div class="col">
+                  <i class="fs-1">Reservas</i>
+                  <br/>
+                  <button type="button" class="btn btn-warning">Reserva Aquí</button>
+                </div> 
+                <div class="col">
+                    <i class="fs-1">Encontranos</i>
+                    <div id="leyendas">
+                        <img src="images/instagram.png" alt="icono ig" width="25" height="25">
+                        <a href="https://www.instagram.com/druzh.bar/">INSTAGRAM</a>
+                        <br />
+                        <img src="../Imagenes/iconos/llamada.png" alt="icono llamada" width="20" height="20">
+                        <i>+54 3794 815 155 </i>
+                        <br />
+                        <img src="../Imagenes/iconos/google-maps-digitalizatec1.png" alt="icono google maps" width="25"
+                            height="25">
+                        RIVADAVIA 1536
+                        <br />
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.814180472968!2d-58.8321155!3d-27.475043799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c9efe8b4ddd%3A0x211212c6ca0f41b3!2sRivadavia%201536%2C%20W3400%20AGA%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1662136515276!5m2!1ses-419!2sar"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                  </div>              
+              </div>
         </section>
+
+        <hr>
+
+        <!-- Pie de Paguina -->
 
         <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
             <p class="fs-5 px-3  pt-3">Maximiliano Rey &copy; Todos Los Derechos Reservados 2022</p>            
