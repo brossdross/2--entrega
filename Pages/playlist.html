@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <!-- NavBar y Logo -->
@@ -49,29 +50,36 @@
     <body class="bg-black">
         <img src="/images/bar-fondo-01.jpg.jpeg" class="img-fluid" alt="FOTO-DRUZH">
         <p class="text-warning d-flex justify-content-center fs-1">PLAYLIST</p>
-       
+
         <!-- Reproductor de Spotify -->
-        <section class="container fluid">
-            <div>
-                <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/playlist/73TqNWIUWJ2eNwjgyMMzpW?utm_source=generator"
-                    width="100%" height="1000" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-            </div>
-        </section>
-       
+
+        <div data-aos="flip-left">
+            <section class="container fluid">
+                <div>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/73TqNWIUWJ2eNwjgyMMzpW?utm_source=generator"
+                        width="100%" height="1000" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </section>
+        </div>
+
         <hr>
 
         <!-- Pie de Paguina -->
 
         <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
-            <p class="fs-5 px-3  pt-3">Maximiliano Rey &copy; Todos Los Derechos Reservados 2022</p>            
+            <p class="fs-5 px-3  pt-3">Maximiliano Rey &copy; Todos Los Derechos Reservados 2022</p>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
             crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>

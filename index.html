@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <!-- NavBar y Logo -->
@@ -50,36 +51,38 @@
         <img src="images/bar-fondo-01.jpg.jpeg" class="img-fluid" alt="FOTO-DRUZH">
 
         <!-- Carrusel -->
-        <div class="carrusel container-fluid">
-            <section class="container-fluid">
-                <p class="text-warning d-flex justify-content-center fs-1">ESTE FIN DE SEMANA</p>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                    </div>
-                    <div class="carousel-inner container-fluid">
-                        <div class="carousel-item active">
-                            <img src="images/dj-viernes.jpg.jpeg" class="d-block w-100" alt="dj-viernes">
+        <div data-aos="fade-up">
+            <div class="carrusel container-fluid">
+                <section class="container-fluid">
+                    <p class="text-warning d-flex justify-content-center fs-1">ESTE FIN DE SEMANA</p>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images/dj-sabado.jpg.jpeg" class="d-block w-100" alt="dj-sabado">
+                        <div class="carousel-inner container-fluid">
+                            <div class="carousel-item active">
+                                <img src="images/dj-viernes.jpg.jpeg" class="d-block w-100" alt="dj-viernes">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/dj-sabado.jpg.jpeg" class="d-block w-100" alt="dj-sabado">
+                            </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
 
         <!-- Medios de Contacto -->
@@ -90,64 +93,69 @@
 
                 <!-- CONTACTO -->
 
-                <div class="col">
-                    <i class="fs-1">Contacto</i>
+                <div data-aos="fade-up-right">
+                    <div class="col">
+                        <i class="fs-1">Contacto</i>
+                    </div>
+                    <br />
+                    <form action="https://formspree.io/f/xayknpaz" method="POST">
+                        <div class="form-item">
+                            <label for="nombre">NOMBRE</label>
+                            <input type="text" id="nombre" name="nombre" required><br />
+                        </div>
+                        <div class="form-item">
+                            <label for="apellido">APELLIDO</label>
+                            <input type="text" id="apellido" name="apellido" required><br />
+                        </div>
+                        <div class="form-item">
+                            <label for="email">E-MAIL</label>
+                            <input type="email" id="email" name="email" required><br />
+                        </div>
+                        <div class="form-item">
+                            <label for="comentarios">COMENTARIOS</label><br />
+                            <textarea name="comentarios" id="comentarios" cols="30" rows="10" required></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="ENVIAR">
+                        </div>
+                    </form>
                 </div>
-                <br />
-                <form action="https://formspree.io/f/xayknpaz" method="POST">
-                    <div class="form-item">
-                        <label for="nombre">NOMBRE</label>
-                        <input type="text" id="nombre" name="nombre" required><br />
-                    </div>
-                    <div class="form-item">
-                        <label for="apellido">APELLIDO</label>
-                        <input type="text" id="apellido" name="apellido" required><br />
-                    </div>
-                    <div class="form-item">
-                        <label for="email">E-MAIL</label>
-                        <input type="email" id="email" name="email" required><br />
-                    </div>
-                    <div class="form-item">
-                        <label for="comentarios">COMENTARIOS</label><br />
-                        <textarea name="comentarios" id="comentarios" cols="30" rows="10" required></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="ENVIAR">
-                    </div>
-                </form>
             </div>
             </div>
 
             <!-- RESERVAS -->
 
-            <div class="col">
-                <i class="fs-1">Reservas</i>
-                <br />
-                <button type="button" class="btn btn-warning">Reserva Aquí</button>
-                <a href="https://www.instagram.com/druzh.bar/"></a>
+            <div data-aos="fade-up">
+                <div class="col">
+                    <i class="fs-1">Reservas</i>
+                    <br />
+                    <button type="button" class="btn btn-warning">Reserva Aquí</button>
+                    <a href="https://www.instagram.com/druzh.bar/"></a>
+                </div>
             </div>
 
             <!--ENCONTRANOS -->
 
-            <div class="col">
-                <i class="fs-1">Encontranos</i>
-                <div id="leyendas">
-                    <img src="/images/instagram.png" alt="icono ig" width="25" height="25">
-                    <a href="https://www.instagram.com/druzh.bar/">INSTAGRAM</a>
-                    <br />
-                    <img src="/images/phone-call.png" alt="icono llamada" width="20" height="20">
-                    <i>+54 3794 815 155 </i>
-                    <br />
-                    <img src="/images/marcador.png" alt="icono google maps" width="25"
-                        height="25">
-                    RIVADAVIA 1536
-                    <br />
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.814180472968!2d-58.8321155!3d-27.475043799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c9efe8b4ddd%3A0x211212c6ca0f41b3!2sRivadavia%201536%2C%20W3400%20AGA%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1662136515276!5m2!1ses-419!2sar"
-                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <div data-aos="fade-up-left">
+                <div class="col">
+                    <i class="fs-1">Encontranos</i>
+                    <div id="leyendas">
+                        <img src="/images/instagram.png" alt="icono ig" width="25" height="25">
+                        <a href="https://www.instagram.com/druzh.bar/">INSTAGRAM</a>
+                        <br />
+                        <img src="/images/phone-call.png" alt="icono llamada" width="20" height="20">
+                        <i>+54 3794 815 155 </i>
+                        <br />
+                        <img src="/images/marcador.png" alt="icono google maps" width="25" height="25">
+                        RIVADAVIA 1536
+                        <br />
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.814180472968!2d-58.8321155!3d-27.475043799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c9efe8b4ddd%3A0x211212c6ca0f41b3!2sRivadavia%201536%2C%20W3400%20AGA%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1662136515276!5m2!1ses-419!2sar"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
 
+                </div>
             </div>
             </div>
         </section>
@@ -163,6 +171,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
             crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>
