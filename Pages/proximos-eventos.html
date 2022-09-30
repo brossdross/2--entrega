@@ -8,9 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <!-- NavBar y Logo -->
+
 <body class="container-fluid bg-black">
     <header class="container-fluid bg-secondary">
         <nav class="navbar navbar-expand-lg bg-secondary">
@@ -47,21 +49,79 @@
 
     <body class="bg-black">
         <img src="/images/bar-fondo-01.jpg.jpeg" class="img-fluid" alt="FOTO-DRUZH">
-        
+
         <p class="text-warning d-flex justify-content-center fs-1">PROXIMOS EVENTOS</p>
 
-        
+        <!-- Cards -->
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div data-aos="fade-right">
+                <div class="col">
+                    <div class="card text-bg-warning mb-3">
+                        <img src="/images/ferpa.jpeg" class="card-img-top" alt="ferpa">
+                        <div class="card-body">
+                            <h5 class="card-title">FER PALACIOS 1/OCT</h5>
+                            <p class="card-text">El maximo exponente de los remix llega a corrientes para hacerte bailar
+                                toda la noche sin parar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <div class="col">
+                    <div class="card text-bg-secondary mb-3">
+                        <img src="/images/migrantes.jpg" class="card-img-top" alt="migrantes">
+                        <div class="card-body">
+                            <h5 class="card-title">MIGRANTES 15/OCT</h5>
+                            <p class="card-text">La banda de cumbia mas aclamada de los ultimos tiempos llega a
+                                corrientes
+                                para que tengas una noche tropical a todo ritmo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up-right">
+                <div class="col">
+                    <div class="card text-bg-secondary mb-3">
+                        <img src="/images/Duki.jpg" class="card-img-top" alt="duki">
+                        <div class="card-body">
+                            <h5 class="card-title">DUKI 4/NOV</h5>
+                            <p class="card-text">El 4 de noviembre el rey del trap llega desde el fin del mundo con los
+                                exitos que marcaron su carrera</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up-left">
+                <div class="col">
+                    <div class="card text-bg-warning mb-3">
+                        <img src="/images/alan-gomez.jpg" class="card-img-top" alt="alan-gomez">
+                        <div class="card-body">
+                            <h5 class="card-title">ALAN GOMEZ 19/NOV</h5>
+                            <p class="card-text">Reviví las mejores noche con los hits del DJ que supo ganarse el
+                                corazón de
+                                su publico</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <hr>
 
         <!-- Pie de Paguina -->
 
         <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
-            <p class="fs-5 px-3  pt-3">Maximiliano Rey &copy; Todos Los Derechos Reservados 2022</p>            
+            <p class="fs-5 px-3  pt-3">Maximiliano Rey &copy; Todos Los Derechos Reservados 2022</p>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
             crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>
