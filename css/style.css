@@ -4,6 +4,11 @@
     transform: scale(150%)rotate(-15deg);
 }
 
+/*==== CSS de Letras ====*/
+.marquesina{
+    filter: drop-shadow(8px 8px 4px);
+}
+
 /*==== css del carrusel ====*/
 .corrousel {
     width: 40%;
