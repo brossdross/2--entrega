@@ -1,0 +1,27 @@
+/*==== CSS del Logo ===*/
+.navbar-brand :hover {
+  transition: all 0.5s;
+  transform: scale(150%) rotate(-15deg);
+}
+
+/*==== CSS de Letras ====*/
+.marquesina {
+  filter: drop-shadow(8px 8px 4px);
+}
+
+/*==== css del carrusel ====*/
+.corrousel {
+  width: 40%;
+  max-width: 55%;
+}
+
+/*==== css del contacto padre ====*/
+.contacto {
+  display: flexbox;
+  justify-content: space-evenly;
+}
+
+/*==== Css del Form ====*/
+.form-item {
+  text-align: row;
+}/*# sourceMappingURL=style.css.map */
