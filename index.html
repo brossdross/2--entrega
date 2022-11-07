@@ -15,7 +15,7 @@
 
 <body class="container bg-black">
     <header class="container bg-secondary">
-        <container>
+        <section>
             <nav class="navbar navbar-expand-lg bg-secondary">
                 <div class="container">
                     <a class="navbar-brand" href="#">
@@ -46,14 +46,14 @@
                     </div>
                 </div>
             </nav>
-        </container>
+        </section>
     </header>
 
     <div class="bg-black">
         <img src="./images/bar-fondo-01.jpg.jpeg" class="img-fluid" alt="FOTO-DRUZH">
 
         <!-- Carrusel -->
-        <container class="carousel ">
+        <section class="carousel ">
             <div data-aos="fade-up">
                 <div class="carrusel container ">
                     <section class="container">
@@ -87,18 +87,18 @@
                     </section>
                 </div>
             </div>
-        </container>
+        </section>
 
         <hr>
 
         <!-- Medios de Contacto -->
 
         <br />
-        <container class="contacto1">
+        <section class="contacto1">
             <div class="contacto container text-white">
                 <!-- RESERVAS -->
                 <hr>
-                <container>
+                <section>
                     <div class="reservas">
                         <div data-aos="fade-up">
                             <div class="col">
@@ -109,20 +109,20 @@
                             </div>
                         </div>
                     </div>
-                </container>
+                </section>
 
 
                 <br />
                 <hr><br />
 
                 <!-- CONTACTO -->
-                <container>
+                <section>
                     <div class="form">
                         <div data-aos="fade-up">
                             <div class="col">
                                 <i class="fs-1">Contacto</i>
                             </div>
-                            <form action="https://formspree.io/f/xayknpaz" method="POST">
+                            <div action="https://formspree.io/f/xayknpaz" method="POST">
                                 <div class="form-item">
                                     <label for="nombre">NOMBRE</label>
                                     <div class="form-box">
@@ -134,32 +134,36 @@
                                     <div class="form-box">
                                         <input type="text" id="apellido" name="apellido" required><br />
                                     </div>
-                                    <div class="form-item">
-                                        <label for="email">E-MAIL</label><br />
-                                        <div class="form-box">
-                                            <input type="email" id="email" name="email" required><br />
-                                        </div>
-                                        <div class="form-item">
-                                            <label for="comentarios">COMENTARIOS</label><br />
-                                            <div class="form-box">
-                                                <textarea name="comentarios" id="comentarios" cols="30" rows="10"
-                                                    required></textarea>
-                                            </div>
-                                            <div class="form-send">
-                                                <input type="submit" value="ENVIAR">
-                                            </div>
+                                </div>
+                                <div class="form-item">
+                                    <label for="email">E-MAIL</label><br />
+                                    <div class="form-box">
+                                        <input type="email" id="email" name="email" required><br />
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <label for="comentarios">COMENTARIOS</label><br />
+                                    <div class="form-box">
+                                        <textarea name="comentarios" id="comentarios" cols="30" rows="10"
+                                            required></textarea>
+                                    </div>
+                                </div>
+                                    <div class="form-send">
+                                        <input type="submit" value="ENVIAR">
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
-                </container>
+                </section>
             </div>
-        </container>
+        </section>
 
 
         <hr>
 
         <!-- Pie de Pagina -->
-        <container>
+        <section>
             <div class="footer">
                 <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap bg-secondary">
                     <div class="encontranos">
@@ -206,7 +210,7 @@
                     AOS.init();
                 </script>
             </div>
-        </container>
+        </section>
 </body>
 
 </html>

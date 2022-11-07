@@ -11,14 +11,18 @@
 
 /*==== css del carrusel ====*/
 .carousel {
-  width: 40%;
+  width: 60%;
   max-width: 55%;
- margin-left: 30%;  
+ margin-left: 25%;  
 }
 
 /*==== css del contacto padre ====*/
 .contacto1 {
-  padding-left: 100px;
+  display: flex;
+}
+
+.contacto{
+  justify-content: center;
 }
 
 /*==== Css del Form ====*/
