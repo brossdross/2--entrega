@@ -1,7 +1,8 @@
 /*==== CSS del Logo ===*/
-.navbar-brand :hover{
+.navbar :hover{
+    background-color: goldenrod;
     transition: all 0.5s;
-    transform: scale(150%)rotate(-15deg);
+    
 }
 
 /*==== CSS de Letras ====*/
@@ -10,7 +11,7 @@
 }
 
 /*==== css del carrusel ====*/
-.corrousel {
+.corousel {
     width: 40%;
     max-width: 55%;
 }

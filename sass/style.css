@@ -1,7 +1,7 @@
-/*==== CSS del Logo ===*/
-.navbar-brand :hover {
-  transition: all 0.5s;
-  transform: scale(150%) rotate(-15deg);
+/*==== CSS del nav ===*/
+.nav-item :hover {
+  transition: all 0.7s;
+  background-color: goldenrod;
 }
 
 /*==== CSS de Letras ====*/
@@ -10,18 +10,40 @@
 }
 
 /*==== css del carrusel ====*/
-.corrousel {
+.carousel {
   width: 40%;
   max-width: 55%;
+ margin-left: 30%;  
 }
 
 /*==== css del contacto padre ====*/
-.contacto {
-  display: flexbox;
-  justify-content: space-evenly;
+.contacto1 {
+  padding-left: 100px;
 }
 
 /*==== Css del Form ====*/
+
 .form-item {
-  text-align: row;
-}/*# sourceMappingURL=style.css.map */
+  width: 24%;
+  max-width: 55%;
+  text-align: top;  
+  padding: 3px;
+}
+
+.form-box :hover{
+  transition: all 0.5s;
+  background-color: goldenrod;
+}
+
+.form-send :hover{
+  transition: all 0.5s;
+  background-color: goldenrod;
+}
+
+/*==== Css del footer ====*/
+.encontranos{
+  padding-top: 30px;
+}
+
+
+/*# sourceMappingURL=style.css.map */

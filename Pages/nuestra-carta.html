@@ -12,8 +12,8 @@
 
 <!-- NavBar y Logo -->
 
-<body class="container-fluid bg-black">
-    <header class="container-fluid bg-secondary">
+<body class="container bg-black">
+    <header class="container bg-secondary">
         <nav class="navbar navbar-expand-lg bg-secondary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -51,8 +51,9 @@
 
         <!-- Carrusel -->
 
-        <div class="carrusel2 container-fluid">
-            <section class="container-fluid">
+        <container>
+        <div class="carrusel2 container">
+            <section class="container">
                 <p class="marquesina text-warning d-flex justify-content-center fs-1">NUESTRA CARTA</p>
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
@@ -82,23 +83,59 @@
                 </div>
             </section>
         </div>
+    </container>
 
         <hr>
 
-        <!-- Pie de Paguina -->
+        <!-- Pie de Pagina -->
+        <container>
+            <div class="footer">
+                <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap bg-secondary">
+                    <div class="encontranos">
+                        <data-aos data-aos="fade-up">
+                            <div class="col">
+                                <div id="leyendas">
+                                    <img src="../images/instagram.png" alt="icono ig" width="25" height="25">
+                                    <a href="https://www.instagram.com/druzh.bar/">INSTAGRAM</a>
+                                    <br />
+                                    <img src="../images/phone-call.png" alt="icono llamada" width="20" height="20">
+                                    <i>+54 3794 815 155 </i>
+                                    <br />
+                                    <img src="../images/marcador.png" alt="icono google maps" width="25" height="25">
+                                    RIVADAVIA 1536
+                                    <br />
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.814180472968!2d-58.8321155!3d-27.475043799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c9efe8b4ddd%3A0x211212c6ca0f41b3!2sRivadavia%201536%2C%20W3400%20AGA%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1662136515276!5m2!1ses-419!2sar"
+                                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
 
-        <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
-            <p class="fs-5 px-3  pt-3">Maximiliano Rey &copy; Todos Los Derechos Reservados 2022</p>
-            <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="dark"
-                data-type="VERTICAL" data-vanity="maxirey28" data-version="v1"><a
-                    class="badge-base__link LI-simple-link"
-                    href="https://ar.linkedin.com/in/maxirey28?trk=profile-badge">Maximiliano Rey</a></div>
+                            </div>
+                        </data-aos>
 
-        </footer>
-        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-            crossorigin="anonymous"></script>
-    </body>
+                    </div>
+                    <p class="fs-5 px-3  pt-3">Maximiliano Rey &copy; Todos Los Derechos Reservados 2022</p>
+                    <br />
+                    <div class="badge-base LI-profile-badge " data-locale="es_ES" data-size="medium" data-theme="dark"
+                        data-type="VERTICAL" data-vanity="maxirey28" data-version="v1"><a
+                            class="badge-base__link LI-simple-link"
+                            href="https://ar.linkedin.com/in/maxirey28?trk=profile-badge">Maximiliano Rey</a>
+                    </div>
+
+
+                </footer>
+
+                <script src="https://platform.linkedin.com/badges/js/profile.js" async defer
+                    type="text/javascript"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+                    crossorigin="anonymous"></script>
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                    AOS.init();
+                </script>
+            </div>
+        </container>
+</body>
 
 </html>
