@@ -117,45 +117,47 @@
 
                 <!-- CONTACTO -->
 
-                <div class="form">
-                    <div data-aos="fade-up">
-                        <div class="row">
-                            <div class="col">
-                                <i class="fs-1">Contacto</i>
-                            </div>
-                            <div action="https://formspree.io/f/xayknpaz" method="POST">
-                                <div class="form-item">
-                                    <label for="nombre">NOMBRE</label>
-                                    <div class="form-box">
-                                        <input type="text" id="nombre" name="nombre" required><br />
-                                    </div>
-                                </div>
-                                <div class="form-item">
-                                    <label for="apellido">APELLIDO</label>
-                                    <div class="form-box">
-                                        <input type="text" id="apellido" name="apellido" required><br />
-                                    </div>
-                                </div>
-                                <div class="form-item">
-                                    <label for="email">E-MAIL</label><br />
-                                    <div class="form-box">
-                                        <input type="email" id="email" name="email" required><br />
-                                    </div>
-                                </div>
-                                <div class="form-item">
-                                    <label for="comentarios">COMENTARIOS</label><br />
-                                    <div class="form-box">
-                                        <textarea name="comentarios" id="comentarios" cols="30" rows="10"
-                                            required></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-send">
-                                    <input type="submit" value="ENVIAR">
-                                </div>
-                            </div>
-                        </div>
-                        </form>
+                <div class="container">
+                    <div class="contacto">
+                        <h1>Contacto</h1>
                     </div>
+                    <form class="row g-3 w-50 m-auto">
+                        <!------------------------Nombre----------------------->
+                        <div class="col">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control form-control-sm" id="nombre">
+                        </div>
+                        <!------------------------Nombre----------------------->
+
+                        <!------------------------Apellido----------------------->
+                        <div class="col-12">
+                            <label for="apellido" class="form-label">Apellido *</label>
+                            <input type="text" class="form-control form-control-sm" id="apellido">
+                        </div>
+                        <!------------------------Apellido----------------------->
+
+                        <!------------------------Email------------------------>
+                        <div class="col-12">
+                            <label for="inputEmail" class="form-label">Email *</label>
+                            <input type="email" class="form-control form-control-sm" id="inputEmail"
+                                placeholder="ejemplo@email.com" required>
+                        </div>
+                        <!------------------------Email------------------------>
+
+                        <!------------------------Pregunta--------------------->
+                        <div class="mb-1">
+                            <label for="exampleFormControlTextarea1" class="form-label">Consulta *</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                required></textarea>
+                        </div>
+                        <!------------------------Pregunta--------------------->
+
+                        <!------------------------Botones Form----------------->
+                        <div class="col-12 d-flex flex-row justify-content-evenly">
+                            <button type="submit" class="btn btn-warning">Enviar</button>
+                        </div>
+                        <!------------------------Botones Form----------------->
+                    </form>
                 </div>
 
             </div>
@@ -175,16 +177,21 @@
                                     <img src="./images/instagram.png" alt="icono ig" width="25" height="25">
                                     <a href="https://www.instagram.com/druzh.bar/">INSTAGRAM</a>
                                     <br />
-                                    <img src="./images/phone-call.png" alt="icono llamada" width="20" height="20">
+                                    <img src="./images/llamada-telefonica.png" alt="icono llamada" width="20"
+                                        height="20">
                                     <i>+54 3794 815 155 </i>
                                     <br />
-                                    <img src="./images/marcador.png" alt="icono google maps" width="25" height="25">
+                                    <img src="./images/marcador-de-posicion.png" alt="icono google maps" width="25"
+                                        height="25">
                                     RIVADAVIA 1536
                                     <br />
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.814180472968!2d-58.8321155!3d-27.475043799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c9efe8b4ddd%3A0x211212c6ca0f41b3!2sRivadavia%201536%2C%20W3400%20AGA%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1662136515276!5m2!1ses-419!2sar"
-                                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <div class="maps">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.814180472968!2d-58.8321155!3d-27.475043799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c9efe8b4ddd%3A0x211212c6ca0f41b3!2sRivadavia%201536%2C%20W3400%20AGA%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1662136515276!5m2!1ses-419!2sar"
+                                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade">
+                                        </iframe>
+                                    </div>
                                 </div>
 
                             </div>
