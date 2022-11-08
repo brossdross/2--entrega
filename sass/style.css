@@ -19,11 +19,11 @@
 /*==== css del contacto padre ====*/
 .contacto1 {
   display: flex;
-}
-
-.contacto{
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
+
 
 /*==== Css del Form ====*/
 
