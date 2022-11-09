@@ -9,11 +9,18 @@
   filter: drop-shadow(8px 8px 4px);
 }
 
-/*==== css del carrusel ====*/
+/*==== Fin de Semana ====*/
 .dj {
   width: 45%;
   max-width: 55%;
   margin-left: 250px;
+}
+
+/*==== css del carrusel ====*/
+.carousel {
+  width: 75%;
+  max-width: 90%;
+  margin-left: 100px;
 }
 
 /*==== css del contacto padre ====*/
