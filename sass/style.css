@@ -1,7 +1,7 @@
 /*==== CSS del Logo ===*/
-.navbar :hover {
+.nav-item :hover {
   background-color: goldenrod;
-  transition: all 0.5s;
+  transition: all 0.7s;
 }
 
 /*==== CSS de Letras ====*/
@@ -10,9 +10,10 @@
 }
 
 /*==== css del carrusel ====*/
-.corousel {
-  width: 25%;
-  max-width: 35%;
+.dj {
+  width: 45%;
+  max-width: 55%;
+  margin-left: 250px;
 }
 
 /*==== css del contacto padre ====*/
@@ -21,8 +22,7 @@
   text-align: center;
 }
 
-/*==== Css del Form ====*/
-.form-item {
-  text-align: row;
-  border: solid black 1px;
+/*==== Footer ====*/
+.encontranos {
+  padding-top: 20px;
 }/*# sourceMappingURL=style.css.map */
