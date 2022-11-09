@@ -1,7 +1,7 @@
 /*==== CSS del Logo ===*/
-.nav-item :hover {
+.navbar :hover {
   background-color: goldenrod;
-  transition: all 0.7s;
+  transition: all 0.5s;
 }
 
 /*==== CSS de Letras ====*/
@@ -11,15 +11,13 @@
 
 /*==== css del carrusel ====*/
 .corousel {
-  width: 40%;
-  max-width: 55%;
+  width: 25%;
+  max-width: 35%;
 }
 
 /*==== css del contacto padre ====*/
 .contacto {
   padding: 50px;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
