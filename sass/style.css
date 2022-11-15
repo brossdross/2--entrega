@@ -13,14 +13,14 @@
 .dj {
   width: 45%;
   max-width: 55%;
-  margin-left: 250px;
+  margin: auto;
 }
 
 /*==== css del carrusel ====*/
 .carousel {
   width: 75%;
   max-width: 90%;
-  margin-left: 100px;
+  margin: auto;
 }
 
 /*==== css del contacto padre ====*/
